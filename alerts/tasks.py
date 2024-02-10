@@ -37,8 +37,6 @@ def check_alert_price():
 					alerts.update(status='TRIGGERED')
 					print(f"Bitcoin price has reached the alert price {price}! has been sent to: { list(alerts.values_list('user__email', flat=True).distinct())}")
 			except Exception as err:
-				if alerts:
-					alerts.update(trigger_in_progress=False)
 				print("Encountered error in alert checking: ", err)
 
 	ws = websocket.WebSocketApp(ws_endpoint, on_message=on_message)
