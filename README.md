@@ -26,8 +26,6 @@ To view logs from the running containers, use the following command:
 docker-compose logs -f web, docker-compose logs -f celery
 ```
 
-If you're facing problem with 
-
 This command displays real-time logs from the application container.
 
 ### Testing Alerts
