@@ -23,7 +23,11 @@ docker-compose up -d --build
 ### Viewing Logs
 To view logs from the running containers, use the following command:
 ```bash
-docker-compose logs -f web, docker-compose logs -f celery
+docker-compose logs -f web
+```
+
+```bash
+docker-compose logs -f celery
 ```
 
 This command displays real-time logs from the application container.
