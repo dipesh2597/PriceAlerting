@@ -30,13 +30,16 @@ docker-compose logs -f web
 docker-compose logs -f celery
 ```
 
-This command displays real-time logs from the application container.
+These commands display real-time logs from the application container.
 
 ### Testing Alerts
 To test alerts immediately, follow these steps:
 
-Inside settings.py, set LOG_PRICES=True OR user this [TradingView Portal](https://in.tradingview.com/symbols/BTCUSDT/) to see live prices of BTCUSDT. This will enable logging of cryptocurrency prices to the console.
+Inside settings.py, set `LOG_PRICES=True` to see live prices of BTCUSDT. This will enable logging of cryptocurrency prices to the console.
 Create an alert for a specific price trigger.
+
+OR use [TradingView Portal](https://in.tradingview.com/symbols/BTCUSDT/) to see live prices.
+
 Once the alert price is reached, an email notification will be sent, and a confirmation message will be logged to the console, indicating the price at which the alert was triggered and the recipient's email address.
 
 ### API Documentation
